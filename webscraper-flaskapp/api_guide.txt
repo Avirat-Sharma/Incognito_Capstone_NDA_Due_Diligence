@@ -1,0 +1,77 @@
+Delaware Scraper:
+
+http://127.0.0.1:5000/delaware_scraper?entity_name=Runway
+
+response: {
+    "Entity Name": "RUNWAY 11 CAPITAL LLC",
+    "File Number": "3047362"
+  },
+  {
+    "Entity Name": "RUNWAY 16 34 HOLDINGS LLC",
+    "File Number": "6647252"
+  },
+  {
+    "Entity Name": "RUNWAY 1, LLC",
+    "File Number": "5643508"
+  },
+  {
+    "Entity Name": "RUNWAY 20, INC.",
+    "File Number": "5069591"
+  },
+
+UK Scraper:
+
+http://127.0.0.1:5000/uk_scraper?entity_name=ION%20Trading
+
+response:
+{
+    "Address": "Avalon House, 72 Lower Mortlake Road, Richmond, Surrey, TW9 2JY",
+    "Company Name": "ION TRADING LIMITED",
+    "Company Number": "03940835",
+    "Previous Names": null,
+    "Status": "Dissolved on  2 February 2016"
+  },
+  {
+    "Address": "C/O Ion, 10 Queen Street Place, London, England, EC4R 1BE",
+    "Company Name": "ION TRADING UK LIMITED",
+    "Company Number": "03261502",
+    "Previous Names": null,
+    "Status": "Incorporated on 10 October 1996"
+  },
+  {
+    "Address": "4385, 16063090 - COMPANIES HOUSE DEFAULT ADDRESS, Cardiff, CF14 8LH",
+    "Company Name": "CRISTIAN IONUT TRADING LTD",
+    "Company Number": "16063090",
+    "Previous Names": null,
+    "Status": "Incorporated on  6 November 2024"
+  },
+  {
+    "Address": "Suite 9 Fairfield, Govan Road, Glasgow, Scotland, G51 4XS",
+    "Company Name": "IONA COMMUNITY TRADING C.I.C.",
+    "Company Number": "SC156678",
+    "Previous Names": null,
+    "Status": "Incorporated on 16 March 1995"
+  },
+
+Validator:
+
+http://127.0.0.1:5000/validate?entity_name=ION%20BOISTEANU%20PROPERTY%20TRADING%20LTD
+
+response : 
+{
+  "UK": [
+    {
+      "Address": "1 Cambuslang Court, Cambuslang, Glasgow, Strathclyde, United Kingdom, G32 8FH",
+      "Company Name": "ION BOISTEANU PROPERTY TRADING LTD",
+      "Company Number": "SC782682",
+      "Previous Names": null,
+      "Status": "Incorporated on 15 September 2023"
+    }
+  ],
+  "status": "Valid"
+}
+{
+  "message": "Company not found",
+  "status": "Invalid in UK"
+}
+

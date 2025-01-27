@@ -203,5 +203,5 @@ if checker is not None:
     checker=delaware_scraper(entity_name)
 if checker is None:
     print("No match found")
-else:
-    print(checker)
+
+print(checker)
